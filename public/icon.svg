@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="cube" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="scan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background with Safe Margin (15% padding for maskable icon support) -->
+  <rect width="512" height="512" rx="104" fill="url(#bg)" />
+
+  <!-- Grid Perspective Lines (Spatial Mapping) -->
+  <g stroke="#334155" stroke-width="2" opacity="0.4">
+    <line x1="64" y1="448" x2="256" y2="280" />
+    <line x1="160" y1="448" x2="256" y2="280" />
+    <line x1="256" y1="448" x2="256" y2="280" />
+    <line x1="352" y1="448" x2="256" y2="280" />
+    <line x1="448" y1="448" x2="256" y2="280" />
+    
+    <line x1="112" y1="400" x2="400" y2="400" />
+    <line x1="160" y1="350" x2="352" y2="350" />
+    <line x1="208" y1="305" x2="304" y2="305" />
+  </g>
+
+  <!-- Isometric 3D Bounding Box (Safe Central 70%) -->
+  <g transform="translate(0, -20)">
+    <!-- Top Face -->
+    <polygon points="256,120 360,180 256,240 152,180" fill="#818cf8" opacity="0.9" />
+    <!-- Left Face -->
+    <polygon points="152,180 256,240 256,360 152,300" fill="#4f46e5" opacity="0.95" />
+    <!-- Right Face -->
+    <polygon points="256,240 360,180 360,300 256,360" fill="#4338ca" opacity="0.9" />
+
+    <!-- Core Optical Sensor Ring -->
+    <circle cx="256" cy="240" r="32" fill="#020617" stroke="#38bdf8" stroke-width="4" />
+    <circle cx="256" cy="240" r="16" fill="#0ea5e9" />
+    <circle cx="256" cy="240" r="6" fill="#ffffff" />
+  </g>
+
+  <!-- CCTV Laser Scan Bar -->
+  <rect x="96" y="220" width="320" height="4" fill="url(#scan)" />
+</svg>

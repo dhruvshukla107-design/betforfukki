@@ -1,0 +1,6 @@
+{
+  "name": "SpatialMapper 3D - Realtime 3D Vision & CCTV Analysis",
+  "description": "Browser-native monocular 3D spatial mapping, point-cloud depth estimation, and live multi-class CCTV monitoring with edge AI object/people/threat detection and VLM verification.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
